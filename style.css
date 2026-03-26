@@ -1,6 +1,4 @@
-* {
-  outline: 1px solid red !important;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -400,8 +398,8 @@ footer img {
     grid-template-columns: 1fr;
     font-size: 1.5rem;
     grid-column: 1/-1;
-    margin-left: 150px;
-    margin-right: 50px;
+    /* margin-left: 150px;
+    margin-right: 50px; */
   }
 }
 @media (max-width: 1500px) {
@@ -552,4 +550,7 @@ footer img {
    }
    .detalhe-titulo {
     display: none;
+   }
+   .conteudo h1 {
+    font-size: 3rem;
    }
