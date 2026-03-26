@@ -1,4 +1,7 @@
 * {
+  outline: 1px solid red !important;
+}
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -146,6 +149,10 @@ article div {
   font-size: 1rem;
 }
 .experiencia-habilidades h1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap:8px;
+  width: 100%;
   margin-left: 20px;
 }
 .experiencia-habilidades p {
@@ -380,19 +387,21 @@ footer img {
 @media (max-width: 1000px) {
   .experiencia-conteudo li {
     grid-template-columns: 1fr;
+    width: auto;
+    max-width: 100%;
   }
   .experienciasub {
     display: flex;
-    font-size: 5rem;
     word-break: none;
     text-align: center;
-    margin-left: 150px;
+    grid-column: 1/-1;
   }
   .experiencias {
     grid-template-columns: 1fr;
     font-size: 1.5rem;
-    grid-column: 1;
+    grid-column: 1/-1;
     margin-left: 150px;
+    margin-right: 50px;
   }
 }
 @media (max-width: 1500px) {
@@ -413,7 +422,7 @@ footer img {
   .formaçãosub {
     display: flex;
     width: 100%;
-    font-size: 5rem;
+    font-size: 4rem;
     word-break: none;
     text-align: center;
     margin-left: 0px;
@@ -449,4 +458,98 @@ footer img {
   main {
     margin: 0;
   }
+    .informacaoinicial, 
+  .formação-cards, 
+  .informacoescomplementares,
+  .experiencias {
+    padding: 0 20px !important; 
+    margin-left: 0 !important;
 }
+  .experiencias {
+    margin-top: 10px;
+  }
+  .formação-cards {
+    margin: 0 auto;
+  }
+.experiencias li {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+  }
+  .experiencia-habilidades h1 {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .experiencia-habilidades p {
+    margin: 5px;
+  }
+@media (max-width: 1000px) {
+  .experienciasub {
+    display: block;
+    word-break: normal;
+    overflow-wrap: normal;
+    font-size: 3rem;
+    width: auto;
+  max-width: 100%;   
+  margin: 20px 0px;
+  padding: 0 20px;
+  }
+  .experiencia-conteudo {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .informacaoinicial, 
+  .formação-cards, 
+  .informacoescomplementares,
+  .experiencias {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0px 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .formaçãosub h1 {
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    text-transform: capitalize;
+    color: #fff;
+    max-width: 100%;
+  }
+  .experienciasub h1 {
+  color: #111;
+  word-break: normal;
+  overflow-wrap: normal;
+  font-size: 2.7rem;
+  width: 100%;
+  max-width: 100%;   
+  margin-left: 0;
+  margin: 20px 0;    
+  padding: 0 20px;
+  }
+  header{ 
+    flex-direction: column;
+    align-items: center;
+    gap:20px
+
+  }
+  .menu {
+    align-items: center;
+    gap:20px
+  }
+   .logolobo {
+   max-width: 100%;
+   height: auto;
+    margin: 0;
+    margin-left: -12px;
+   }
+   .conteudo {
+   margin-left: 10px;
+   }
+   .detalhe-titulo {
+    display: none;
+   }
